@@ -1,29 +1,56 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>border-collapse</title>
-  <style>
-    table { border: 2px solid black; margin-bottom: 2rem; }
-    th, td { border: 2px solid black; padding: 0.5rem 1rem; }
+  <head>
+    <meta charset="UTF-8" />
+    <title>border-collapse</title>
+    <style>
+      table {
+        border: 2px solid black;
+        margin-bottom: 2rem;
+      }
+      th,
+      td {
+        border: 2px solid black;
+        padding: 0.5rem 1rem;
+      }
 
-    .collapse  { border-collapse: collapse; }
-    .separate  { border-collapse: separate; }
-  </style>
-</head>
-<body>
+      .collapse {
+        border-collapse: collapse;
+      }
+      .separate {
+        border-collapse: separate;
+      }
+    </style>
+  </head>
+  <body>
+    <table class="collapse">
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Alice</td>
+        <td>30</td>
+      </tr>
+      <tr>
+        <td>Bob</td>
+        <td>25</td>
+      </tr>
+    </table>
 
-  <table class="collapse">
-    <tr><th>Name</th><th>Age</th></tr>
-    <tr><td>Alice</td><td>30</td></tr>
-    <tr><td>Bob</td><td>25</td></tr>
-  </table>
-
-  <table class="separate">
-    <tr><th>Name</th><th>Age</th></tr>
-    <tr><td>Alice</td><td>30</td></tr>
-    <tr><td>Bob</td><td>25</td></tr>
-  </table>
-
-</body>
+    <table class="separate">
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Alice</td>
+        <td>30</td>
+      </tr>
+      <tr>
+        <td>Bob</td>
+        <td>25</td>
+      </tr>
+    </table>
+  </body>
 </html>
